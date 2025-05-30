@@ -63,7 +63,6 @@ public class AuthControll {
 
             SecurityContextHolder.getContext().setAuthentication(authentication);
 
-            // The UserDetails object is now correctly loaded through the qualified userDetailsService
             UserDetails userDetails = userDetailsService.loadUserByUsername(loginreq.getName());
 
             return jwt.generateToken(userDetails);

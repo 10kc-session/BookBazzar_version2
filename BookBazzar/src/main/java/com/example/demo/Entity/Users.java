@@ -1,13 +1,5 @@
 package com.example.demo.Entity;
 
-
-
-
-
-
-
-
-
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -28,6 +20,7 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Users  implements UserDetails{
+	private static final long serialVersionUID = 1L;
 	public int getId() {
 		return id;
 	}
@@ -93,9 +86,6 @@ public class Users  implements UserDetails{
 		
 		return authorities;
 				
-	}
-	
-	
-	
+	}	
 
 }
